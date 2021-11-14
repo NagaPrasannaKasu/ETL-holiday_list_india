@@ -1,4 +1,4 @@
-In the search of Data Engineer position here I came up with a small project building a ETL-process based on API.
+In the search of Data Engineer positions here I came up with a small project building a ETL-process based on API.
 This is to have an overview on how to build a simple data pipeline that downloads data using requests libraries and finally run the code in a docker container.
 
 API origin -> https://calendarific.com/

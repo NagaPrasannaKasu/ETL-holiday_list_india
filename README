@@ -1,0 +1,54 @@
+In the search of Data Engineer position here I came up with a small project building a ETL-process based on API.
+This is to have an overview on how to build a simple data pipeline that downloads data using requests libraries and finally run the code in a docker container.
+
+API origin -> https://calendarific.com/
+The API data contains list of Holidays from a specific country. Data is in the Json formate which contains multiple rows.
+My aim is to extract list of holidays from a specific year & specific country then validate the data, and 
+finally only few important rows from the json file need to be saved in the database.
+
+I want my program to run in local as well as in a virtual machine.
+for that I initialized a docker container.
+
+Infrastructure:
+OS: Windows 10
+platform: Visual Studio Code 1.62
+programming language : Python
+libraries used: sqlite3, requests, pandas
+
+used Git-Bash 
+for running the VS program and for installing Docker
+
+Docker version :
+Client:
+ Cloud integration: v1.0.20
+ Version:           20.10.10
+ API version:       1.41
+ Go version:        go1.16.9
+ Git commit:        b485636
+ Built:             Mon Oct 25 07:47:53 2021
+ OS/Arch:           windows/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.10
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.16.9
+  Git commit:       e2f740d
+  Built:            Mon Oct 25 07:41:30 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.11
+  GitCommit:        5b46e404f6b9f661a205e28d59c982d3634148f8
+ runc:
+  Version:          1.0.2
+  GitCommit:        v1.0.2-0-g52b36a2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+DockerHub: 
+https://hub.docker.com/repository/docker/prasannakasu/holiday_list
+https://hub.docker.com/repository/docker/prasannakasu/country_holidays_docker

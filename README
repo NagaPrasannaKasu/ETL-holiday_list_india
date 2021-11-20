@@ -1,22 +1,18 @@
-In the search of Data Engineer positions here I came up with a small project building a ETL-process based on API.
-This is to have an overview on how to build a simple data pipeline that downloads data using requests libraries and finally run the code in a docker container.
+Here I came up with a small project building an ETL-process based on API and Dockerized it.
+This is to prepare myself to have an overview on how to build a simple data pipeline and run it in a container. 
 
 API origin -> https://calendarific.com/
-The API data contains list of Holidays from a specific country. Data is in the Json formate which contains multiple rows.
-My aim is to extract list of holidays from a specific year & specific country then validate the data, and 
-finally only few important rows from the json file need to be saved in the database.
-
-I want my program to run in local as well as in a virtual machine.
-for that I initialized a docker container.
+An API data contains list of public holidays from different countries. The data is in Json format which contains several fields that are semi-structured.
+My goal is to extract list of holidays from a specific year and from a specific country then validate the data and then load the data into the database.
+Complete ETL process is done using PYTHON programming language and to load the data into the database, SQLite extension is used in VSCode. 
+For my convenience I used Git-Bash to run the Program. Then finally the source code ran in the docker container.
 
 Infrastructure:
 OS: Windows 10
 platform: Visual Studio Code 1.62
 programming language : Python
 libraries used: sqlite3, requests, pandas
-
-used Git-Bash 
-for running the VS program and for installing Docker
+used Git-Bash to execute Python program as well as to initialize Docker container
 
 Docker version :
 Client:

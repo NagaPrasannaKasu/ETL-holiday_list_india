@@ -2,9 +2,9 @@ Here I came up with a small project building an ETL-process based on API and Doc
 This is to prepare myself to have an overview on how to build a simple data pipeline and run it in a container. 
 
 API origin -> https://calendarific.com/
-An API data contains list of public holidays from different countries. The data is in Json format which contains several fields that are semi-structured.
+An API data contains list of public holidays from different countries. The data is in json format which contains several fields that are semi-structured.
 My goal is to extract list of holidays from a specific year and from a specific country then validate the data and then load the data into the database.
-Complete ETL process is done using PYTHON programming language and to load the data into the database, SQLite extension is used in VSCode. 
+ETL process is done in VSCode environment using PYTHON programming language and the data is loaded into the database using SQLite extension.
 For my convenience I used Git-Bash to run the Program. Then finally the source code ran in the docker container.
 
 Infrastructure:
